@@ -1,0 +1,146 @@
+/* Header */
+    /*Header tag*/
+    .header{
+        margin: 0;
+
+        height: 50px;
+        width: 100%;
+    }
+    /* header navbar */
+    .navbar{
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        padding: 50px 100px;
+        
+    }
+    .navbar-nav{
+        width: 100%;
+
+    }
+    #exCollapsingNavbar2{
+        background-color: rgba(48, 48, 49, 0.493);
+        position: fixed;
+        top: 48px;
+        left: 0;
+        width: 100%;
+        padding: 0px 20px;
+        transition: 1s;
+    }
+    /* site Logo */
+	#site-logo-a{
+		text-decoration: none;
+		color: white;
+		font-weight: 800;
+		letter-spacing: 10px;
+	}
+/* body */
+body{
+    
+    background-image: url('https://img.freepik.com/free-vector/black-business-background-with-blue-streaks_53876-118965.jpg?w=740&t=st=1694946648~exp=1694947248~hmac=ab82b7cd29102a5242cff5acd4b46861aa6709e4548a01478db2909e2778282b');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+	
+}
+
+.hidden {
+    display: none;
+}
+
+/* h1 */
+h1{
+    padding: 5%;
+    color: white;
+    display: block;
+}
+/* products */
+.products{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 20px;
+    margin-bottom: 10%;
+}
+
+.product{
+    background-color: white;
+    height: 300px;
+    width: 250px;
+    text-align: center;
+}
+
+.product img{
+    width: 230px;
+    margin: 10px;
+}
+
+.add-to-cart{
+    background-color: rgb(18, 130, 204);
+    border-radius: 10px 10px;
+    -webkit-border-radius: 10px 10px;
+    -moz-border-radius: 10px 10px;
+    -ms-border-radius: 10px 10px;
+    -o-border-radius: 10px 10px;
+    border: none;
+    padding: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+.add-to-cart:hover{
+    background-color: rgb(4, 111, 182);
+}
+
+.product p{
+    font-weight: 500;
+    color: rgb(255, 72, 0);
+}
+
+#view-more{
+    text-align: center;
+}
+/* media screen */
+@media screen and (min-width:900px) {
+    
+}
+@media screen and (min-width:600px) and (max-width:900px) {
+    h1{
+        text-align: center;
+    }
+    .products{
+        display: inline-block;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .product{
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+}
+@media screen and (min-width:300px) and (max-width:600px) {
+    h1{
+        text-align: center;
+    }
+    .products{
+        display: block;
+        padding-left: 20px;
+    }
+    .product{
+        margin: 10% ;
+        
+    }
+}
+@media screen and (min-width:200px) and (max-width:300px) {
+    h1{
+        text-align: center;
+    }
+    .products{
+        display: block;
+        padding-left: 20px;
+    }
+    .product{
+        margin: 10% ;
+        width: 100%;
+    }
+}
